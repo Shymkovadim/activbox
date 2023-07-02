@@ -364,7 +364,7 @@
     }
 
     @media (max-width:762px) {
-        margin-bottom: 35px;
+        margin-bottom: 35pxgit;
     }
 
     &__container {
@@ -447,8 +447,10 @@
     }
 
     .work {
+
         position: relative;
         display: flex;
+        aspect-ratio: 10/9;
 
         &__content {
             position: absolute;
