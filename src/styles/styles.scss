@@ -357,6 +357,16 @@
 }
 
 .features {
+    margin-bottom: 115px;
+
+    @media (max-width:1025px) {
+        margin-bottom: 80px;
+    }
+
+    @media (max-width:762px) {
+        margin-bottom: 35px;
+    }
+
     &__container {
         padding: 0 15px;
         max-width: 1200px;
