@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .btm {
@@ -441,6 +441,7 @@
 .works {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 80px;
 
     @media (max-width:762px) {
         grid-template-columns: 1fr 1fr;
@@ -513,6 +514,109 @@
         &__foto {
             width: 100%;
             object-fit: cover;
+        }
+    }
+}
+
+.team {
+    margin-bottom: 115px;
+
+    &__container {
+        padding: 0 15px;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 30px;
+
+        @media (max-width:762px) {
+            grid-template-columns: 1fr;
+        }
+
+        .persona-card {
+            display: grid;
+
+            grid-template-areas: 'people'
+                'social';
+
+            &__people {
+                grid-area: people;
+
+
+                &__foto {
+                    aspect-ratio: 1/1;
+                    margin-bottom: 30px;
+
+
+                    &__img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                &__description {
+                    color: #6C7279;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    margin-bottom: 35px;
+
+                    @media (max-width:1025px) {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+
+                }
+
+                &__name {
+                    color: #2D3033;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    text-transform: capitalize;
+                    margin-bottom: 5px;
+
+                    @media (max-width:1025px) {
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
+
+                }
+
+                &__profession {
+                    color: #FF4343;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    text-transform: uppercase;
+                    margin-bottom: 18px;
+
+                    @media (max-width:1025px) {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+            }
+
+            &__social {
+                grid-area: social;
+                align-items: baseline;
+                display: flex;
+                column-gap: 5px;
+                align-items: flex-end;
+
+                &__link {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    width: 39px;
+                    height: 39px;
+                    border: 1px solid #C6CBCD;
+                }
+
+            }
         }
     }
 }
