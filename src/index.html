@@ -482,7 +482,7 @@
 
     </div>
 
-    <div class="swiper">
+    <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="slide__wripper-img">
@@ -499,7 +499,7 @@
             </div>
             <div class=" swiper-slide">
                 <div class="slide__wripper-img">
-                    <img class="slide__img" src="image/bg.jpg" alt="bg">
+                    <img class="slide__img" src="image/bg4.jpg" alt="bg">
                 </div>
                 <div class="slide__content">
                     <p class="slide__description">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
@@ -516,12 +516,46 @@
                     <img class="slide__img" src="image/bg.jpg" alt="bg">
                 </div>
                 <div class="slide__content">
-                    <p class="slide__description">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+
+                    <p class="slide__description">“Integer posuere erat a ante venenatis dapibus posuere velit
+                        aliquet.
                         3Donec
                         sed odio dui. Aenean eu leo quam...”</p>
                     <p class="slide__signature">
                         Susan Sims, Interaction Designer at XYZ
                     </p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide__wripper-img">
+                    <img class="slide__img" src="image/bg2.jpg" alt="bg">
+                </div>
+                <div class="slide__content">
+
+                    <p class="slide__description">“Integer posuere erat a ante venenatis dapibus posuere velit
+                        aliquet.
+                        3Donec
+                        sed odio dui. Aenean eu leo quam...”</p>
+                    <p class="slide__signature">
+                        Susan Sims, Interaction Designer at XYZ
+                    </p>
+
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide__wripper-img">
+                    <img class="slide__img" src="image/bg3.jpg" alt="bg">
+                </div>
+                <div class="slide__content">
+
+                    <p class="slide__description">“Integer posuere erat a ante venenatis dapibus posuere velit
+                        aliquet.
+                        3Donec
+                        sed odio dui. Aenean eu leo quam...”</p>
+                    <p class="slide__signature">
+                        Susan Sims, Interaction Designer at XYZ
+                    </p>
+
                 </div>
             </div>
 
@@ -588,13 +622,25 @@
             </div>
         </div>
         <div class="copyring">
-            <p class="copyring__text">Copyright © 2015 ActiveBox. All Rights Reserved
-                Made with<span> by Kamal Chaneman</span></p>
+            <div class="copyring__container">
+                <p class="copyring__text">Copyright © 2015 ActiveBox. All Rights Reserved
+                    Made with<span> by Kamal Chaneman</span></p>
+            </div>
         </div>
     </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 0,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 
